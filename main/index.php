@@ -255,11 +255,7 @@ if ($index == 0) {
 							<?php echo($release_origin); ?>
 						</span>
 						<br/>
-						<span style="font-size: 16px">
-							<a class="panel" href="<?php echo(AUTOFILL_SITE); ?>"><?php echo(defined(AUTOFILL_FULLNAME) ? AUTOFILL_FULLNAME : AUTOFILL_MASTER); ?></a>
-							<br />
-							<a class="panel" href="mailto:<?php echo(AUTOFILL_EMAIL); ?>"><?php echo(AUTOFILL_EMAIL); ?></a>
-						</span>
+
 					</div>
 					<img class="icon" src="CydiaIcon.png" style="width:64px; height:64px; vertical-align: top;" />
 					<hr />
@@ -300,16 +296,7 @@ if ($index == 0) {
 	}
 	if (defined("AUTOFILL_EMAIL")) {
 ?>
-				<a href="mailto:<?php echo(AUTOFILL_EMAIL); ?>?subject=<?php echo($release_origin); ?>" target="_blank">
-				<img class="icon" src="<?php echo(SITE_URL); ?>icon/default/email.png" />
-					<div>
-						<div>
-							<label>
-								<p><?php _e('Contact us'); ?></p>
-							</label>
-						</div>
-					</div>
-				</a>
+
 <?php
 	}
 	if (defined("AUTOFILL_TENCENT") && defined("AUTOFILL_TENCENT_NAME")) {
